@@ -4,16 +4,37 @@
     <Compile Update="connexion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ConsulterClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="EspaceAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EspaceClient.cs">
+    <Compile Update="FormDetailsMedicament.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="EspaceFournisseur.cs">
+    <Compile Update="FormListeFournisseurs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="FormFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAjouterClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAjouterCommandes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormListeCommandes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormAjouterMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Register.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

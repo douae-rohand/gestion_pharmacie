@@ -1,0 +1,492 @@
+﻿namespace gestion_pharmacie
+{
+    partial class FormListeFournisseurs
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            panelHeader = new Panel();
+            labelTitre = new Label();
+            panelMenu = new Panel();
+            buttonFournisseurs = new Button();
+            labelMenuTitre = new Label();
+            buttonMedicaments = new Button();
+            buttonCommandes = new Button();
+            buttonClients = new Button();
+            buttonAlertes = new Button();
+            buttonDeconnexion = new Button();
+            panelStatistiques = new Panel();
+            panelStatTotal = new Panel();
+            labelStatTotalValeur = new Label();
+            labelStatTotalTitre = new Label();
+            panelSearch = new Panel();
+            comboCritere = new ComboBox();
+            textRecherche = new TextBox();
+            buttonRecherche = new Button();
+            buttonAjouter = new Button();
+            buttonRafraichir = new Button();
+            clientGridView = new DataGridView();
+            Supprimer = new DataGridViewButtonColumn();
+            Modifier = new DataGridViewButtonColumn();
+            panelHeader.SuspendLayout();
+            panelMenu.SuspendLayout();
+            panelStatistiques.SuspendLayout();
+            panelStatTotal.SuspendLayout();
+            panelSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)clientGridView).BeginInit();
+            SuspendLayout();
+            // 
+            // panelHeader
+            // 
+            panelHeader.BackColor = Color.FromArgb(252, 248, 243);
+            panelHeader.Controls.Add(labelTitre);
+            panelHeader.Dock = DockStyle.Top;
+            panelHeader.Location = new Point(0, 0);
+            panelHeader.Margin = new Padding(4, 4, 4, 4);
+            panelHeader.Name = "panelHeader";
+            panelHeader.Size = new Size(1924, 84);
+            panelHeader.TabIndex = 1;
+            panelHeader.Paint += panelHeader_Paint;
+            // 
+            // labelTitre
+            // 
+            labelTitre.AutoSize = true;
+            labelTitre.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            labelTitre.ForeColor = Color.FromArgb(34, 62, 91);
+            labelTitre.Location = new Point(250, 11);
+            labelTitre.Margin = new Padding(4, 0, 4, 0);
+            labelTitre.Name = "labelTitre";
+            labelTitre.Size = new Size(444, 54);
+            labelTitre.TabIndex = 0;
+            labelTitre.Text = " Liste des Fournisseurs";
+            labelTitre.Click += labelTitre_Click;
+            // 
+            // panelMenu
+            // 
+            panelMenu.BackColor = Color.FromArgb(34, 62, 91);
+            panelMenu.Controls.Add(buttonFournisseurs);
+            panelMenu.Controls.Add(labelMenuTitre);
+            panelMenu.Controls.Add(buttonMedicaments);
+            panelMenu.Controls.Add(buttonCommandes);
+            panelMenu.Controls.Add(buttonClients);
+            panelMenu.Controls.Add(buttonAlertes);
+            panelMenu.Controls.Add(buttonDeconnexion);
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Location = new Point(0, 84);
+            panelMenu.Margin = new Padding(4, 4, 4, 4);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(230, 916);
+            panelMenu.TabIndex = 2;
+            // 
+            // buttonFournisseurs
+            // 
+            buttonFournisseurs.BackColor = Color.FromArgb(246, 145, 118);
+            buttonFournisseurs.Cursor = Cursors.Hand;
+            buttonFournisseurs.FlatAppearance.BorderSize = 0;
+            buttonFournisseurs.FlatStyle = FlatStyle.Flat;
+            buttonFournisseurs.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonFournisseurs.ForeColor = Color.White;
+            buttonFournisseurs.Location = new Point(0, 340);
+            buttonFournisseurs.Margin = new Padding(4, 4, 4, 4);
+            buttonFournisseurs.Name = "buttonFournisseurs";
+            buttonFournisseurs.Padding = new Padding(20, 0, 0, 0);
+            buttonFournisseurs.Size = new Size(230, 55);
+            buttonFournisseurs.TabIndex = 8;
+            buttonFournisseurs.Text = "👥 Fournisseurs";
+            buttonFournisseurs.TextAlign = ContentAlignment.MiddleLeft;
+            buttonFournisseurs.UseVisualStyleBackColor = false;
+            // 
+            // labelMenuTitre
+            // 
+            labelMenuTitre.AutoSize = true;
+            labelMenuTitre.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            labelMenuTitre.ForeColor = Color.FromArgb(233, 244, 238);
+            labelMenuTitre.Location = new Point(15, 25);
+            labelMenuTitre.Margin = new Padding(4, 0, 4, 0);
+            labelMenuTitre.Name = "labelMenuTitre";
+            labelMenuTitre.Size = new Size(181, 32);
+            labelMenuTitre.TabIndex = 0;
+            labelMenuTitre.Text = "🗂️ Navigation";
+            // 
+            // buttonMedicaments
+            // 
+            buttonMedicaments.BackColor = Color.FromArgb(34, 62, 91);
+            buttonMedicaments.Cursor = Cursors.Hand;
+            buttonMedicaments.FlatAppearance.BorderSize = 0;
+            buttonMedicaments.FlatStyle = FlatStyle.Flat;
+            buttonMedicaments.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonMedicaments.ForeColor = Color.White;
+            buttonMedicaments.Location = new Point(0, 80);
+            buttonMedicaments.Margin = new Padding(4, 4, 4, 4);
+            buttonMedicaments.Name = "buttonMedicaments";
+            buttonMedicaments.Padding = new Padding(20, 0, 0, 0);
+            buttonMedicaments.Size = new Size(230, 55);
+            buttonMedicaments.TabIndex = 1;
+            buttonMedicaments.Text = "💊 Médicaments";
+            buttonMedicaments.TextAlign = ContentAlignment.MiddleLeft;
+            buttonMedicaments.UseVisualStyleBackColor = false;
+            buttonMedicaments.Click += buttonMedicaments_Click;
+            // 
+            // buttonCommandes
+            // 
+            buttonCommandes.BackColor = Color.FromArgb(34, 62, 91);
+            buttonCommandes.Cursor = Cursors.Hand;
+            buttonCommandes.FlatAppearance.BorderSize = 0;
+            buttonCommandes.FlatStyle = FlatStyle.Flat;
+            buttonCommandes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonCommandes.ForeColor = Color.White;
+            buttonCommandes.Location = new Point(0, 145);
+            buttonCommandes.Margin = new Padding(4, 4, 4, 4);
+            buttonCommandes.Name = "buttonCommandes";
+            buttonCommandes.Padding = new Padding(20, 0, 0, 0);
+            buttonCommandes.Size = new Size(230, 55);
+            buttonCommandes.TabIndex = 2;
+            buttonCommandes.Text = "📦 Commandes";
+            buttonCommandes.TextAlign = ContentAlignment.MiddleLeft;
+            buttonCommandes.UseVisualStyleBackColor = false;
+            buttonCommandes.Click += buttonCommandes_Click;
+            // 
+            // buttonClients
+            // 
+            buttonClients.BackColor = Color.FromArgb(34, 62, 91);
+            buttonClients.Cursor = Cursors.Hand;
+            buttonClients.FlatAppearance.BorderSize = 0;
+            buttonClients.FlatStyle = FlatStyle.Flat;
+            buttonClients.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonClients.ForeColor = Color.White;
+            buttonClients.Location = new Point(0, 210);
+            buttonClients.Margin = new Padding(4, 4, 4, 4);
+            buttonClients.Name = "buttonClients";
+            buttonClients.Padding = new Padding(20, 0, 0, 0);
+            buttonClients.Size = new Size(230, 55);
+            buttonClients.TabIndex = 3;
+            buttonClients.Text = "👥 Clients";
+            buttonClients.TextAlign = ContentAlignment.MiddleLeft;
+            buttonClients.UseVisualStyleBackColor = false;
+            buttonClients.Click += buttonClients_Click;
+            // 
+            // buttonAlertes
+            // 
+            buttonAlertes.BackColor = Color.FromArgb(34, 62, 91);
+            buttonAlertes.Cursor = Cursors.Hand;
+            buttonAlertes.FlatAppearance.BorderSize = 0;
+            buttonAlertes.FlatStyle = FlatStyle.Flat;
+            buttonAlertes.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonAlertes.ForeColor = Color.White;
+            buttonAlertes.Location = new Point(0, 275);
+            buttonAlertes.Margin = new Padding(4, 4, 4, 4);
+            buttonAlertes.Name = "buttonAlertes";
+            buttonAlertes.Padding = new Padding(20, 0, 0, 0);
+            buttonAlertes.Size = new Size(230, 55);
+            buttonAlertes.TabIndex = 4;
+            buttonAlertes.Text = "🔔 Alertes";
+            buttonAlertes.TextAlign = ContentAlignment.MiddleLeft;
+            buttonAlertes.UseVisualStyleBackColor = false;
+            buttonAlertes.Click += buttonAlertes_Click;
+            // 
+            // buttonDeconnexion
+            // 
+            buttonDeconnexion.BackColor = Color.FromArgb(235, 203, 176);
+            buttonDeconnexion.Cursor = Cursors.Hand;
+            buttonDeconnexion.FlatAppearance.BorderSize = 0;
+            buttonDeconnexion.FlatStyle = FlatStyle.Flat;
+            buttonDeconnexion.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonDeconnexion.ForeColor = Color.FromArgb(34, 62, 91);
+            buttonDeconnexion.Location = new Point(20, 846);
+            buttonDeconnexion.Margin = new Padding(4, 4, 4, 4);
+            buttonDeconnexion.Name = "buttonDeconnexion";
+            buttonDeconnexion.Padding = new Padding(15, 0, 0, 0);
+            buttonDeconnexion.Size = new Size(184, 50);
+            buttonDeconnexion.TabIndex = 7;
+            buttonDeconnexion.Text = "Déconnexion";
+            buttonDeconnexion.TextAlign = ContentAlignment.MiddleLeft;
+            buttonDeconnexion.UseVisualStyleBackColor = false;
+            // 
+            // panelStatistiques
+            // 
+            panelStatistiques.BackColor = Color.FromArgb(242, 231, 211);
+            panelStatistiques.Controls.Add(panelStatTotal);
+            panelStatistiques.Location = new Point(250, 91);
+            panelStatistiques.Margin = new Padding(4, 4, 4, 4);
+            panelStatistiques.Name = "panelStatistiques";
+            panelStatistiques.Padding = new Padding(20, 20, 20, 20);
+            panelStatistiques.Size = new Size(669, 170);
+            panelStatistiques.TabIndex = 3;
+            // 
+            // panelStatTotal
+            // 
+            panelStatTotal.BackColor = Color.FromArgb(34, 62, 91);
+            panelStatTotal.Controls.Add(labelStatTotalValeur);
+            panelStatTotal.Controls.Add(labelStatTotalTitre);
+            panelStatTotal.Location = new Point(25, 25);
+            panelStatTotal.Margin = new Padding(4, 4, 4, 4);
+            panelStatTotal.Name = "panelStatTotal";
+            panelStatTotal.Size = new Size(451, 121);
+            panelStatTotal.TabIndex = 0;
+            // 
+            // labelStatTotalValeur
+            // 
+            labelStatTotalValeur.AutoSize = true;
+            labelStatTotalValeur.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            labelStatTotalValeur.ForeColor = Color.White;
+            labelStatTotalValeur.Location = new Point(20, 45);
+            labelStatTotalValeur.Margin = new Padding(4, 0, 4, 0);
+            labelStatTotalValeur.Name = "labelStatTotalValeur";
+            labelStatTotalValeur.Size = new Size(50, 60);
+            labelStatTotalValeur.TabIndex = 1;
+            labelStatTotalValeur.Text = "0";
+            // 
+            // labelStatTotalTitre
+            // 
+            labelStatTotalTitre.AutoSize = true;
+            labelStatTotalTitre.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            labelStatTotalTitre.ForeColor = Color.FromArgb(233, 244, 238);
+            labelStatTotalTitre.Location = new Point(20, 15);
+            labelStatTotalTitre.Margin = new Padding(4, 0, 4, 0);
+            labelStatTotalTitre.Name = "labelStatTotalTitre";
+            labelStatTotalTitre.Size = new Size(377, 30);
+            labelStatTotalTitre.TabIndex = 0;
+            labelStatTotalTitre.Text = "📊 Total des Fournisseurs existants";
+            // 
+            // panelSearch
+            // 
+            panelSearch.BackColor = Color.White;
+            panelSearch.Controls.Add(comboCritere);
+            panelSearch.Controls.Add(textRecherche);
+            panelSearch.Controls.Add(buttonRecherche);
+            panelSearch.Controls.Add(buttonAjouter);
+            panelSearch.Controls.Add(buttonRafraichir);
+            panelSearch.Location = new Point(250, 281);
+            panelSearch.Margin = new Padding(4, 4, 4, 4);
+            panelSearch.Name = "panelSearch";
+            panelSearch.Padding = new Padding(25, 25, 25, 25);
+            panelSearch.Size = new Size(1662, 110);
+            panelSearch.TabIndex = 4;
+            // 
+            // comboCritere
+            // 
+            comboCritere.BackColor = Color.FromArgb(252, 248, 243);
+            comboCritere.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboCritere.FlatStyle = FlatStyle.Flat;
+            comboCritere.Font = new Font("Segoe UI", 10F);
+            comboCritere.ForeColor = Color.FromArgb(34, 62, 91);
+            comboCritere.FormattingEnabled = true;
+            comboCritere.Items.AddRange(new object[] { "Fournisseur", "Telephone" });
+            comboCritere.Location = new Point(25, 25);
+            comboCritere.Margin = new Padding(4, 4, 4, 4);
+            comboCritere.Name = "comboCritere";
+            comboCritere.Size = new Size(250, 36);
+            comboCritere.TabIndex = 0;
+            // 
+            // textRecherche
+            // 
+            textRecherche.BackColor = Color.FromArgb(252, 248, 243);
+            textRecherche.BorderStyle = BorderStyle.None;
+            textRecherche.Font = new Font("Segoe UI", 11F);
+            textRecherche.ForeColor = Color.FromArgb(34, 62, 91);
+            textRecherche.Location = new Point(295, 25);
+            textRecherche.Margin = new Padding(4, 4, 4, 4);
+            textRecherche.Name = "textRecherche";
+            textRecherche.PlaceholderText = "Rechercher...";
+            textRecherche.Size = new Size(500, 30);
+            textRecherche.TabIndex = 1;
+            textRecherche.TextChanged += textRecherche_TextChanged;
+            // 
+            // buttonRecherche
+            // 
+            buttonRecherche.BackColor = Color.FromArgb(34, 62, 91);
+            buttonRecherche.Cursor = Cursors.Hand;
+            buttonRecherche.FlatAppearance.BorderSize = 0;
+            buttonRecherche.FlatStyle = FlatStyle.Flat;
+            buttonRecherche.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonRecherche.ForeColor = Color.White;
+            buttonRecherche.Location = new Point(815, 22);
+            buttonRecherche.Margin = new Padding(4, 4, 4, 4);
+            buttonRecherche.Name = "buttonRecherche";
+            buttonRecherche.Size = new Size(200, 45);
+            buttonRecherche.TabIndex = 2;
+            buttonRecherche.Text = "🔍 Rechercher";
+            buttonRecherche.UseVisualStyleBackColor = false;
+            // 
+            // buttonAjouter
+            // 
+            buttonAjouter.BackColor = Color.FromArgb(246, 145, 118);
+            buttonAjouter.Cursor = Cursors.Hand;
+            buttonAjouter.FlatAppearance.BorderSize = 0;
+            buttonAjouter.FlatStyle = FlatStyle.Flat;
+            buttonAjouter.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonAjouter.ForeColor = Color.White;
+            buttonAjouter.Location = new Point(1198, 22);
+            buttonAjouter.Margin = new Padding(4, 4, 4, 4);
+            buttonAjouter.Name = "buttonAjouter";
+            buttonAjouter.Size = new Size(238, 45);
+            buttonAjouter.TabIndex = 3;
+            buttonAjouter.Text = "➕ Nouvelle Commande";
+            buttonAjouter.UseVisualStyleBackColor = false;
+            // 
+            // buttonRafraichir
+            // 
+            buttonRafraichir.BackColor = Color.FromArgb(233, 244, 238);
+            buttonRafraichir.Cursor = Cursors.Hand;
+            buttonRafraichir.FlatAppearance.BorderSize = 0;
+            buttonRafraichir.FlatStyle = FlatStyle.Flat;
+            buttonRafraichir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonRafraichir.ForeColor = Color.FromArgb(34, 62, 91);
+            buttonRafraichir.Location = new Point(1449, 22);
+            buttonRafraichir.Margin = new Padding(4, 4, 4, 4);
+            buttonRafraichir.Name = "buttonRafraichir";
+            buttonRafraichir.Size = new Size(194, 45);
+            buttonRafraichir.TabIndex = 4;
+            buttonRafraichir.Text = "🔄 Rafraîchir";
+            buttonRafraichir.UseVisualStyleBackColor = false;
+            // 
+            // clientGridView
+            // 
+            clientGridView.AllowUserToAddRows = false;
+            clientGridView.AllowUserToDeleteRows = false;
+            clientGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            clientGridView.BackgroundColor = Color.White;
+            clientGridView.BorderStyle = BorderStyle.None;
+            clientGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            clientGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(34, 62, 91);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.Padding = new Padding(10);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(34, 62, 91);
+            dataGridViewCellStyle1.SelectionForeColor = Color.White;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            clientGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            clientGridView.ColumnHeadersHeight = 50;
+            clientGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            clientGridView.Columns.AddRange(new DataGridViewColumn[] { Supprimer, Modifier });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(34, 62, 91);
+            dataGridViewCellStyle2.Padding = new Padding(8);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(233, 244, 238);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(34, 62, 91);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            clientGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            clientGridView.EnableHeadersVisualStyles = false;
+            clientGridView.GridColor = Color.FromArgb(233, 244, 238);
+            clientGridView.Location = new Point(250, 409);
+            clientGridView.Margin = new Padding(2);
+            clientGridView.Name = "clientGridView";
+            clientGridView.ReadOnly = true;
+            clientGridView.RowHeadersVisible = false;
+            clientGridView.RowHeadersWidth = 62;
+            clientGridView.RowTemplate.Height = 45;
+            clientGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            clientGridView.Size = new Size(1662, 379);
+            clientGridView.TabIndex = 12;
+            clientGridView.CellContentClick += clientGridView_CellContentClick_1;
+            // 
+            // Supprimer
+            // 
+            Supprimer.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Supprimer.FlatStyle = FlatStyle.Flat;
+            Supprimer.HeaderText = "Supprimer";
+            Supprimer.MinimumWidth = 120;
+            Supprimer.Name = "Supprimer";
+            Supprimer.ReadOnly = true;
+            Supprimer.Text = "🗑️";
+            Supprimer.ToolTipText = "Supprimer ce client";
+            Supprimer.UseColumnTextForButtonValue = true;
+            Supprimer.Width = 120;
+            // 
+            // Modifier
+            // 
+            Modifier.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Modifier.FlatStyle = FlatStyle.Flat;
+            Modifier.HeaderText = "Modifier";
+            Modifier.MinimumWidth = 120;
+            Modifier.Name = "Modifier";
+            Modifier.ReadOnly = true;
+            Modifier.Text = "✏️";
+            Modifier.ToolTipText = "Modifier ce client";
+            Modifier.UseColumnTextForButtonValue = true;
+            Modifier.Width = 120;
+            // 
+            // FormListeFournisseurs
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(242, 231, 211);
+            ClientSize = new Size(1924, 1000);
+            Controls.Add(clientGridView);
+            Controls.Add(panelSearch);
+            Controls.Add(panelStatistiques);
+            Controls.Add(panelMenu);
+            Controls.Add(panelHeader);
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "FormListeFournisseurs";
+            Text = "FormListeFournisseurs";
+            WindowState = FormWindowState.Maximized;
+            panelHeader.ResumeLayout(false);
+            panelHeader.PerformLayout();
+            panelMenu.ResumeLayout(false);
+            panelMenu.PerformLayout();
+            panelStatistiques.ResumeLayout(false);
+            panelStatTotal.ResumeLayout(false);
+            panelStatTotal.PerformLayout();
+            panelSearch.ResumeLayout(false);
+            panelSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)clientGridView).EndInit();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Panel panelHeader;
+        private Label labelTitre;
+        private Panel panelMenu;
+        private Button buttonFournisseurs;
+        private Label labelMenuTitre;
+        private Button buttonMedicaments;
+        private Button buttonCommandes;
+        private Button buttonClients;
+        private Button buttonAlertes;
+        private Button buttonDeconnexion;
+        private Panel panelStatistiques;
+        private Panel panelStatTotal;
+        private Label labelStatTotalValeur;
+        private Label labelStatTotalTitre;
+        private Panel panelSearch;
+        private ComboBox comboCritere;
+        private TextBox textRecherche;
+        private Button buttonRecherche;
+        private Button buttonAjouter;
+        private Button buttonRafraichir;
+        private DataGridView clientGridView;
+        private DataGridViewButtonColumn Supprimer;
+        private DataGridViewButtonColumn Modifier;
+    }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\douae\\source\\repos\\gestion_pharmacie\\gestion_pharmacie\\gestion_pharmacie.csproj": {}
+    "C:\\Users\\douae\\source\\repos\\gestion_pharmacie_finale\\gestion_pharmacie\\gestion_pharmacie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\douae\\source\\repos\\gestion_pharmacie\\gestion_pharmacie\\gestion_pharmacie.csproj": {
+    "C:\\Users\\douae\\source\\repos\\gestion_pharmacie_finale\\gestion_pharmacie\\gestion_pharmacie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie\\gestion_pharmacie\\gestion_pharmacie.csproj",
+        "projectUniqueName": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie_finale\\gestion_pharmacie\\gestion_pharmacie.csproj",
         "projectName": "gestion_pharmacie",
-        "projectPath": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie\\gestion_pharmacie\\gestion_pharmacie.csproj",
+        "projectPath": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie_finale\\gestion_pharmacie\\gestion_pharmacie.csproj",
         "packagesPath": "C:\\Users\\douae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie\\gestion_pharmacie\\obj\\",
+        "outputPath": "C:\\Users\\douae\\source\\repos\\gestion_pharmacie_finale\\gestion_pharmacie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
