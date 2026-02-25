@@ -76,8 +76,8 @@ gestion_pharmacie/
 2. Restaurez les packages NuGet (si nécessaire).
 3. Compilez et lancez l'application (F5).
 
-## 📝 Licence
-Ce projet est destiné à un usage éducatif/professionnel interne.
+## 📄 License
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
 *Réalisé avec ❤️ pour une gestion pharmaceutique simplifiée.*
