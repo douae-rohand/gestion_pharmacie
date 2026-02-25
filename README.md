@@ -1,83 +1,83 @@
-# Gestion de Pharmacie 💊
+# Pharmacy Management 💊
 
-Un système complet de gestion de pharmacie développé en C# WinForms, permettant de gérer les stocks de médicaments, les clients, les commandes et les fournisseurs avec une intégration SQL Server.
+A complete pharmacy management system developed in C# WinForms, allowing for the management of medication stocks, clients, orders, and suppliers with SQL Server integration.
 
-## 🌟 Fonctionnalités Clés
+## 🌟 Key Features
 
-### 📦 Gestion des Stocks (Médicaments)
-- **Catalogue Complet** : Suivi des médicaments avec références, descriptions, photos et catégories.
-- **Suivi des Stocks** : Visualisation en temps réel des quantités disponibles.
-- **Alertes de Stock** : Système d'alerte automatique lorsque le stock atteint un seuil critique.
-- **Gestion des Péremptions** : Suivi rigoureux des dates de péremption avec indicateurs de proximité.
-- **Gestion des Prix** : Contrôle des prix d'achat et de vente avec calcul automatique des marges.
+### 📦 Stock Management (Medications)
+- **Complete Catalog**: Tracking of medications with references, descriptions, photos, and categories.
+- **Stock Tracking**: Real-time visualization of available quantities.
+- **Stock Alerts**: Automatic alert system when stock reaches a critical threshold.
+- **Expiration Management**: Rigorous tracking of expiration dates with proximity indicators.
+- **Price Management**: Control of purchase and sale prices with automatic margin calculation.
 
-### 👥 Gestion des Clients
-- **Base de Données Clients** : Enregistrement des informations personnelles (CIN, Téléphone, Adresse).
-- **Historique d'Achats** : Suivi détaillé des commandes passées par chaque client.
-- **Statistiques Clients** : Analyse des clients les plus actifs et calcul du revenu par client.
+### 👥 Client Management
+- **Client Database**: Recording of personal information (ID - CIN, Phone, Address).
+- **Purchase History**: Detailed tracking of orders placed by each client.
+- **Client Statistics**: Analysis of the most active clients and calculation of revenue per client.
 
-### 🧾 Gestion des Commandes
-- **Prise de Commande** : Interface intuitive pour ajouter des produits à une commande.
-- **Lignes de Commande** : Gestion détaillée des articles, quantités et prix unitaires.
-- **Mise à jour Automatique** : Décrémentation automatique du stock lors de la validation d'une commande.
-- **Statuts des Commandes** : Suivi des étapes (En cours, Validée, Livrée, Annulée).
-- **Facturation** : Génération automatique de factures pour chaque commande.
+### 🧾 Order Management
+- **Order Taking**: Intuitive interface for adding products to an order.
+- **Order Lines**: Detailed management of items, quantities, and unit prices.
+- **Automatic Update**: Automatic stock decrement when an order is validated.
+- **Order Status**: Tracking of stages (In Progress, Validated, Delivered, Cancelled).
+- **Invoicing**: Automatic generation of invoices for each order.
 
-### 🏢 Gestion des Fournisseurs
-- **Annuaire Fournisseurs** : Gestion des coordonnées des fournisseurs.
-- **Relations Fournitures** : Suivi de quel fournisseur fournit quel médicament avec le prix d'achat associé.
+### 🏢 Supplier Management
+- **Supplier Directory**: Management of supplier contact information.
+- **Supply Relations**: Tracking of which supplier provides which medication with the associated purchase price.
 
-### 📊 Dashboard & Statistiques
-- Vue d'ensemble des performances de la pharmacie.
-- Statistiques sur le stock total, les alertes de péremption, et le chiffre d'affaires.
+### 📊 Dashboard & Statistics
+- Overview of the pharmacy's performance.
+- Statistics on total stock, expiration alerts, and turnover.
 
-## 🛠️ Technologies Utilisées
+## 🛠️ Technologies Used
 
-- **Langage** : C#
-- **Interface** : Windows Forms (WinForms)
-- **Base de Données** : Microsoft SQL Server
-- **Accès aux Données** : ADO.NET (Microsoft.Data.SqlClient)
-- **Framework** : .NET Framework / .NET Core
+- **Language**: C#
+- **Interface**: Windows Forms (WinForms)
+- **Database**: Microsoft SQL Server
+- **Data Access**: ADO.NET (Microsoft.Data.SqlClient)
+- **Framework**: .NET Framework / .NET Core
 
-## 📂 Structure du Projet
+## 📂 Project Structure
 
 ```text
 gestion_pharmacie/
-├── Medicament.cs       # Logique métier et accès DB pour les médicaments
-├── Client.cs           # Logique métier et accès DB pour les clients
-├── Commande.cs         # Gestion des commandes et des lignes de commande
-├── Fournisseur.cs      # Gestion des fournisseurs
-├── Program.cs          # Point d'entrée de l'application
-├── Forms/              # Toutes les interfaces utilisateur (Designer.cs, .cs, .resx)
+├── Medicament.cs       # Business logic and DB access for medications
+├── Client.cs           # Business logic and DB access for clients
+├── Commande.cs         # Order and order line management
+├── Fournisseur.cs      # Supplier management
+├── Program.cs          # Application entry point
+├── Forms/              # All user interfaces (Designer.cs, .cs, .resx)
 │   ├── FormAjouterMedicament.cs
 │   ├── FormAjouterCommandes.cs
 │   ├── FormListeCommandes.cs
 │   └── ...
-└── Resources/          # Images et icônes
+└── Resources/          # Images and icons
 ```
 
-## 🚀 Installation et Configuration
+## 🚀 Installation and Configuration
 
-### Prérequis
-- Visual Studio 2022 ou ultérieur.
-- SQL Server LocalDB ou SQL Server Express.
-- .NET SDK correspondant au projet.
+### Prerequisites
+- Visual Studio 2022 or later.
+- SQL Server LocalDB or SQL Server Express.
+- .NET SDK corresponding to the project.
 
-### Configuration de la Base de Données
-1. Créez une base de données nommée `Pharmacie` dans votre instance SQL Server.
-2. Exécutez le script SQL (si disponible) ou laissez l'application créer les tables (vérifiez la logique d'initialisation).
-3. **Important** : Modifiez la chaîne de connexion dans les fichiers `Medicament.cs`, `Client.cs`, et `Commande.cs` pour qu'elle pointe vers votre serveur :
+### Database Configuration
+1. Create a database named `Pharmacie` in your SQL Server instance.
+2. Run the SQL script (if available) or let the application create the tables (check the initialization logic).
+3. **Important**: Modify the connection string in the `Medicament.cs`, `Client.cs`, and `Commande.cs` files so that it points to your server:
    ```csharp
-   private static string connectionString = "data source=VOTRE_SERVEUR;initial catalog=Pharmacie;integrated security=SSPI;...";
+   private static string connectionString = "data source=YOUR_SERVER;initial catalog=Pharmacie;integrated security=SSPI;...";
    ```
 
-### Lancement
-1. Ouvrez le fichier `gestion_pharmacie.sln` dans Visual Studio.
-2. Restaurez les packages NuGet (si nécessaire).
-3. Compilez et lancez l'application (F5).
+### Running
+1. Open the `gestion_pharmacie.sln` file in Visual Studio.
+2. Restore NuGet packages (if necessary).
+3. Compile and launch the application (F5).
 
-## 📝 Licence
-Ce projet est destiné à un usage éducatif/professionnel interne.
+## 📄 License
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
-*Réalisé avec ❤️ pour une gestion pharmaceutique simplifiée.*
+*Created with ❤️ for simplified pharmaceutical management.*
